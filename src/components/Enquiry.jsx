@@ -47,8 +47,7 @@ const Enquiry = () => {
     <div>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          <div className="flex">
-            
+          <div className="">
             <FormField
               control={form.control}
               name="username"
@@ -66,7 +65,6 @@ const Enquiry = () => {
               )}
             />
 
-
             <FormField
               control={form.control}
               name="lastname"
@@ -74,13 +72,14 @@ const Enquiry = () => {
                 <FormItem>
                   {/* <FormLabel>Username</FormLabel> */}
                   <FormControl>
-                    <div class="w-56 relative group mt-[30px]">
+                    {/* <div class="w-56 relative group mt-[30px]">
                       <input
                         type="text"
                         name="username"
+                        id="username"
                         // placeholder="last name"
-                        className="w-full h-10 px-4 text-sm peer bg-gray-100 outline-none focus:border-black border-b border-gray-500"
                         {...field}
+                        className="w-full h-10 px-4 text-sm peer bg-gray-100 outline-none focus:border-black border-b border-gray-500"
                         // required
                       />
                       <label
@@ -88,6 +87,21 @@ const Enquiry = () => {
                         class="transform transition-all absolute top-0 left-0 h-full flex items-center pl-2 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-[15px] peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0"
                       >
                         Username
+                      </label>
+                    </div> */}
+                    <div class="w-56 relative group mt-[30px]">
+                      <input
+                        type="text"
+                        id="lastname"
+                        {...field}
+                        required
+                        className="w-full h-10 px-4 text-sm peer bg-gray-100 outline-none focus:border-black border-b border-gray-500"
+                      />
+                      <label
+                        htmlFor="lastname"
+                        className="transform transition-all absolute top-0 left-0 h-full flex items-center pl-2 text-sm group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-[15px] peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0"
+                      >
+                        lastname
                       </label>
                     </div>
                     {/* <Input placeholder="last name" {...field} /> */}

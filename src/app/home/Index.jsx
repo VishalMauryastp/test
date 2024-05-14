@@ -59,6 +59,7 @@ const Index = () => {
         </SheetContent>
       </Sheet>
       <Enquiry /> */}
+       <Enquiry /> 
       {/* <Parallax /> */}
       {/* <Parallax /> */}
       <div
