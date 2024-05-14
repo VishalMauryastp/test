@@ -138,7 +138,7 @@ const Index = () => {
             </p>
           </div>
         </div>
-        <div className="mt-40 h-screen border border-red-500">
+        <div className="mt-40  border border-red-500">
           <div className="bg-white p-4 sm:p-8">
             <div className="font-inter text-2xl font-extrabold tracking-tight text-black">
               Majestic peaks, nature's embrace.
